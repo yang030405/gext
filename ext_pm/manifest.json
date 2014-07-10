@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+
+  "name": "Page Monitor",
+  "description": "Warning you when the page is changed.",
+  "version": "0.1",
+  "icons": {
+    "128": "icon-128.png"
+  },
+  
+  "browser_action": {
+    "default_icon": "icon-19.png",
+    "default_popup": "popup.html"
+  }
+}

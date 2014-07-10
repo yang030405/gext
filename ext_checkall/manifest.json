@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+
+  "name": "Check All Perm",
+  "description": "Help you check all user permissions.",
+  "version": "0.0.1",
+  "permissions" : ["tabs", "http://localhost:8080/*"],
+  
+  "background": { "scripts": ["js/jquery-1.7.1.min.js", "js/background.js"] },
+  
+  "page_action": {
+    "default_icon": "img/z.png",
+    "default_title": "Check All Perm",
+    "default_popup": "popup.html"
+  },
+  
+  "content_scripts":[
+      {
+        "matches":["http://localhost:8080/apps/ManageUserRoles.*"],
+		"js":["js/jquery-1.7.1.min.js", "js/content_script.js"]
+      }
+  ]
+}
