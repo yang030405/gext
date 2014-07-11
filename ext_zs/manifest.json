@@ -2,8 +2,11 @@
   "manifest_version": 2,
 
   "name": "Z-Search",
-  "description": "Provide a quick way to search Zuora Knowledge Center.",
+  "description": "Provide a quick way to search in Zuora Knowledge Center.",
   "version": "0.1",
+  "icons": { "16": "img/logo.png",
+             "48": "img/logo.png",
+             "128": "img/logo.png" },
   "permissions" : ["tabs"],
   
   "browser_action": {
