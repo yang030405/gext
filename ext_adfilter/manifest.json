@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+
+  "name": "AD Filter",
+  "description": "Filter the ADs on page automatically.",
+  "version": "0.0.1",
+  "permissions" : ["tabs"],
+  
+  "browser_action": {
+    "default_icon": "img/adf.png",
+    "default_title": "ADs Filter"
+  },
+  
+  "content_scripts":[
+      {
+        "matches":["<all_urls>"],
+		"js":["js/jquery-1.7.1.min.js", "js/content_script.js"],
+		"run_at":"document_start"
+      }
+  ]
+}
