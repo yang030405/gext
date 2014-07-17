@@ -5,11 +5,13 @@
   "description": "Warning you when the page is changed.",
   "version": "0.1",
   "icons": {
-    "128": "icon-128.png"
+    "128": "img/icon-128.png"
   },
   
+  "permissions": ["<all_urls>", "tabs", "storage"],
+  
   "browser_action": {
-    "default_icon": "icon-19.png",
-    "default_popup": "popup.html"
+    "default_icon": "/img/icon-19.png",
+    "default_popup": "/html/popup.html"
   }
 }
