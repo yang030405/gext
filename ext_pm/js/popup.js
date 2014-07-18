@@ -9,7 +9,10 @@ function initEvent () {
 					return true;
 				}
 				
-				jQuery(tr).find("td").each(function (index, td) {
+				var trJQ = jQuery(tr);
+				trJQ.attr("align", "center");
+				
+				trJQ.find("td").each(function (index, td) {
 					if (index == 4 || index == 5 || index == 6 || index == 7) {
 						jQuery(td).remove();
 						return true;
