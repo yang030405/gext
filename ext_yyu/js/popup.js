@@ -36,6 +36,5 @@ function initEvent () {
 }
 
 jQuery(document).ready(function () {
-	console.log("loaded");
 	initEvent();
 });

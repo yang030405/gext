@@ -1,11 +1,11 @@
-chrome.runtime.onMessage.addListener(function(request, sender, sendRequest){
-	console.log("execute here");
-	if (request.type == "checkall") {
+function checkOrUncheckAll (type) {
+	console.log("going to invoke 'check / uncheck all' operation");
+	if (type == "checkall") {
 		jQuery(":checkbox").each(function (index, cb) {
 			var cbJQ = jQuery(cb);
 			cbJQ.attr("checked", "checked");
 		});
-	} else if (request.type == "uncheckall") {
+	} else if (type == "uncheckall") {
 		jQuery(":checkbox").each(function (index, cb) {
 			var cbJQ = jQuery(cb);
 			cbJQ.removeAttr("checked");
@@ -13,4 +13,8 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendRequest){
 	} else {
 		return;
 	}
+}
+
+chrome.runtime.onMessage.addListener(function(request, sender, sendRequest){
+	checkOrUncheckAll(request.type);
 });
