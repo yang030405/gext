@@ -2,7 +2,7 @@
   "manifest_version": 2,
 
   "name": "Z-Search",
-  "description": "Provide a quick way to search in Zuora Knowledge Center.",
+  "description": "Provide a quick way to search in kfc.",
   "version": "0.1",
   "icons": { "16": "img/logo.png",
              "48": "img/logo.png",
